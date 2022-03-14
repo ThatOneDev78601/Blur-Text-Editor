@@ -24,15 +24,13 @@ function createWindow() {
     });
     mainWindow.setTitle("Blur Text Editor");
     mainWindow.setMenuBarVisibility(false);
-
+    // trust 
     mainWindow.loadURL(
-        isDev
-            ? "http://localhost:3000"
-            : url.format({
-                pathname: path.join(__dirname, '../out/index.html'),
-                protocol: 'file:',
-                slashes: true
-            })
+        url.format({
+            pathname: path.join(__dirname, '../out/index.html'),
+            protocol: 'file:',
+            slashes: true
+        })
     );
     // `file://${path.join(__dirname, "../build/index.html")}`
     //   format({

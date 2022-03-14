@@ -11,7 +11,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint",
-    "start": "concurrently \" next dev\" \"wait-on http://localhost:3000 && electron .\""
+    "start": "concurrently \" next dev\" \"electron .\""
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
@@ -58,5 +58,5 @@
   "description": "Text Editor for Windows 10",
   "author": "ThatOneDev & Undefined",
   "main": "public/electron.js",
-  "homepage": "./"
+  "homepage": "../"
 }
